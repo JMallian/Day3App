@@ -14,6 +14,7 @@
 		C5E91F9F22694BFE003F51E7 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E91F9E22694BFE003F51E7 /* PhotosViewController.swift */; };
 		C5E91FA122694E72003F51E7 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E91FA022694E72003F51E7 /* FlickrAPI.swift */; };
 		C5E91FA322695351003F51E7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E91FA222695351003F51E7 /* API.swift */; };
+		C5E91FA5226956A0003F51E7 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E91FA4226956A0003F51E7 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C5E91F9E22694BFE003F51E7 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		C5E91FA022694E72003F51E7 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 		C5E91FA222695351003F51E7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C5E91FA4226956A0003F51E7 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C5E91F9822694A2B003F51E7 /* Info.plist */,
 				C5E91FA022694E72003F51E7 /* FlickrAPI.swift */,
 				C5E91FA222695351003F51E7 /* API.swift */,
+				C5E91FA4226956A0003F51E7 /* PhotoStore.swift */,
 			);
 			path = Day3;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E91FA5226956A0003F51E7 /* PhotoStore.swift in Sources */,
 				C5E91FA122694E72003F51E7 /* FlickrAPI.swift in Sources */,
 				C5E91F9F22694BFE003F51E7 /* PhotosViewController.swift in Sources */,
 				C5E91FA322695351003F51E7 /* API.swift in Sources */,
