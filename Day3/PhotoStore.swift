@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum PhotosResult {
+    case success([Photo])
+    case failure(Error)
+}
+
 /// This class is responsible for initiating the web service requests, it uses the URLSession API and the FlickrAPI struct to fetch a list of interesting photos and download the image data for each photo.
 class PhotoStore {
     private let session: URLSession = {
