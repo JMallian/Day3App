@@ -34,21 +34,21 @@ struct FlickrAPI {
     static func photos(fromJSON data: Data) -> PhotosResult {
         do {
             let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
-            
+            print(jsonObject)
             guard
                 let jsonDictionary = jsonObject as? [AnyHashable: Any],
                 let photos = jsonDictionary["photos"] as? [String: Any],
-                let photosArray = photos["photo"] as? [[String: Any]] else {
+                let photosArray = photos["photo"] as? [[String: Any]]
+                else {
                     return .failure(FlickrError.invalidJSONData)
             }
-            
             var finalPhotos = [Photo]()
             for photoJSON in photosArray {
                 if let photo = photo(fromJson: photoJSON) {
                     finalPhotos.append(photo)
                 }
             }
-            
+
             if finalPhotos.isEmpty && !photosArray.isEmpty {
                 // not able to parse any of the photos, JSON format may have changed
                 return .failure(FlickrError.invalidJSONData)
@@ -63,7 +63,7 @@ struct FlickrAPI {
         guard
             let photoId = json["id"] as? String,
             let title = json["title"] as? String,
-            let dateString = json["dateTaken"] as? String,
+            let dateString = json["datetaken"] as? String,
             let photoURLString = json["url_h"] as? String,
             let url = URL(string: photoURLString),
             let dateTaken = dateFormatter.date(from: dateString) else {
