@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5C8D640226BC93B00E93356 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C8D63F226BC93B00E93356 /* PhotoDataSource.swift */; };
 		C5E91F8D22694A2A003F51E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E91F8C22694A2A003F51E7 /* AppDelegate.swift */; };
 		C5E91F9222694A2A003F51E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E91F9022694A2A003F51E7 /* Main.storyboard */; };
 		C5E91F9422694A2B003F51E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E91F9322694A2B003F51E7 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5C8D63F226BC93B00E93356 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		C5E91F8922694A2A003F51E7 /* Day3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E91F8C22694A2A003F51E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5E91F9122694A2A003F51E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				C5E91F9822694A2B003F51E7 /* Info.plist */,
 				C5E91FA022694E72003F51E7 /* FlickrAPI.swift */,
 				C5E91FA222695351003F51E7 /* API.swift */,
+				C5C8D63F226BC93B00E93356 /* PhotoDataSource.swift */,
 			);
 			path = Day3;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5E91FA7226A40DC003F51E7 /* Photo.swift in Sources */,
+				C5C8D640226BC93B00E93356 /* PhotoDataSource.swift in Sources */,
 				C5E91FA5226956A0003F51E7 /* PhotoStore.swift in Sources */,
 				C5E91FA122694E72003F51E7 /* FlickrAPI.swift in Sources */,
 				C5E91F9F22694BFE003F51E7 /* PhotosViewController.swift in Sources */,
