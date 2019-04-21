@@ -55,6 +55,7 @@
                                         <connections>
                                             <outlet property="imageView" destination="gyL-ds-Flm" id="dhs-dX-LMI"/>
                                             <outlet property="spinner" destination="C4E-Qt-AAq" id="zfo-6s-NlG"/>
+                                            <segue destination="lBr-u4-nTE" kind="show" identifier="showPhoto" id="S6p-En-Zqc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -77,6 +78,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002.8985507246377" y="780.80357142857144"/>
+        </scene>
+        <!--Photo Info View Controller-->
+        <scene sceneID="C51-qS-4Ew">
+            <objects>
+                <viewController id="lBr-u4-nTE" customClass="PhotoInfoViewController" customModule="Day3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HVM-eY-DCp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgH-5d-Vxt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qz5-XY-mPe" firstAttribute="trailing" secondItem="AgH-5d-Vxt" secondAttribute="trailing" id="cpw-cs-t9a"/>
+                            <constraint firstItem="AgH-5d-Vxt" firstAttribute="top" secondItem="Qz5-XY-mPe" secondAttribute="top" id="iay-ef-j6Y"/>
+                            <constraint firstItem="AgH-5d-Vxt" firstAttribute="leading" secondItem="Qz5-XY-mPe" secondAttribute="leading" id="n5Z-Qn-UqA"/>
+                            <constraint firstItem="Qz5-XY-mPe" firstAttribute="bottom" secondItem="AgH-5d-Vxt" secondAttribute="bottom" id="ozg-wA-oKt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qz5-XY-mPe"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AgH-5d-Vxt" id="VyV-fr-anr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5E-zc-qpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="777"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eyb-Me-3eS">
